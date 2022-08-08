@@ -6,6 +6,10 @@ const popContainer = document.getElementById('pop_container');
 const popClose = document.getElementById('pop_close');
 const clickUp = document.getElementById('click-up');
 const firstHeader = document.getElementById('first_header'); 
+// const revealed_elements = document.getElementById('revealed')
+const bioSection = document.getElementById('bio')
+const projectsSection = document.getElementById('projects')
+const contactSection = document.getElementById('contact')
 
 
 navBar.addEventListener('click', toggleNavbar)
@@ -31,52 +35,29 @@ function untoggleNavBar(){
 }
 function openPopup(){
     popUp.classList.add('pop-up-open')
+    bioSection.classList.remove('reveal-active')
+    contactSection.classList.remove('reveal-active')
+    projectsSection.classList.remove('reveal-active')
 }
-// function closePopup(e){
-//     if (e.target.classList.contains('pop-up-close')) {
-//         popUp.classList.remove('pop-up-open')  
-//     } else if (e.target.classList.contains('pop-up-container')){
-//         popUp.classList.remove('pop-up-open') 
 
-//     }
-
-// }
 function closePopup(){
     popUp.classList.remove('pop-up-open')
-
+    bioSection.classList.add('reveal-active')
+    contactSection.classList.add('reveal-active')
+    projectsSection.classList.add('reveal-active')
 }
-// function closePopup2(){
-//     popUp.classList.remove('pop-up-open')
-//     if (e.target.firstChild.contains('pop-up-container')){
-//         console.log(e.target.firstChild)
-//      }else if (e.target.classList.contains('pop-up')){
-//         popUp.classList.remove('pop-up-open')
-//      }
+
+// const showMenu = (toggleId, navId) =>{
+//     const toggle = document.getElementById(toggleId),
+//     nav = document.getElementById(navId)
+
+//     if(toggle && nav){
+//         toggle.addEventListener('click', ()=>{
+//             nav.classList.toggle('show')
+//       })
+//     }
 // }
 
-
-
-
-
-
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
-
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-      })
-    }
-}
-showMenu('nav_toggle','nav-menu')
-// Typed js 
-// var typed = new Typed('.animation', {
-//     strings:['Catherine Nginya'],
-//     typeSpeed:70,
-//     BackSpeed:60,
-//     loop:true
-// })
 
 // ------------------------ANIMATIONS----------------------------//
 const tl = gsap.timeline({defaults: { ease: "power1.out"}})
