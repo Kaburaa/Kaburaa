@@ -132,6 +132,7 @@ img{
 .nav_link{
     position: relative;
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .nav_link:hover{
@@ -525,6 +526,7 @@ img{
 .footer-element{
     width: 100px;
     cursor: pointer;
+    padding: 1rem;
 }
 .footer-element:hover{
     width: 120px;
@@ -725,6 +727,20 @@ img{
 .text{
     transform: translateY(150px);
     display: inline-block;
+}
+
+/*  ===================================================================================== 
+    REVEAL ELEMENTS ON SCROLL 
+    =====================================================================================
+*/ 
+.reveal {
+    transform: translateY(150px); 
+    opacity: 0; 
+    transition: all 2s ease;
+} 
+.reveal.reveal-active {
+    transform: translateY(0px); 
+    opacity: 1;
 }
 
 

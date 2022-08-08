@@ -99,5 +99,22 @@ tl.fromTo('.nav_item', { opacity: 0}, { opacity: 1, duration: 1}, "-=1")
 tl.fromTo('.hero-header', { opacity: 0}, { opacity: 1, duration: 1}, "-=1")
 tl.fromTo('.nav_bar', { opacity: 0}, { opacity: 1, duration: 1}, "-=1")
 
+// Reveal elements on scroll 
+window.addEventListener('scroll', revealElements) 
+
+function revealElements() {
+    var elements = document.querySelectorAll('.reveal')
+
+    for(let i = 0; i < elements.length; i++){
+        var windowHeight = window.innerHeight 
+        var revealPoint = elements[i].getBoundingClientRect().top 
+        var revealTop  = 200 
+
+        if (revealTop < windowHeight - revealPoint){
+            elements[i].classList.add('reveal-active')
+        }
+    }
+}
+
 
 

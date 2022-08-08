@@ -21,7 +21,7 @@
 
     <title>My Project1</title>
 </head>
-<body>
+<body style="background-color: var(--dark-color);">
     <div class="slider">
         <h1>Welcome to my Portfolio</h1>
     </div> 
@@ -46,7 +46,7 @@
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                 <li class="nav_item"><a href="#home" class="nav_link">Home</a></li> 
-                <li class="nav_item"><a href="bio" class="nav_link">Bio</a></li>  
+                <li class="nav_item"><a href="#bio" class="nav_link">Bio</a></li>  
                 <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li> 
                 <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li> 
                 </ul>
@@ -62,12 +62,12 @@
         </nav>
     </header>  
 
-    <main class="hero-section"> 
+    <main class="hero-section" id="home"> 
         <h1 class="hero-header">Catherine Kabura</h1>
     
     </main>
 
-    <div class="bio-section">
+    <div class="bio-section reveal" id="bio">
 
        <div class="bio-container-1"> 
             <div class="bio-header">
@@ -158,7 +158,7 @@
         </div>
 
     </div>
-    <div class="projects-section">
+    <div class="projects-section reveal" id="projects">
     
         <div class="projects-container-1">
             <div class="my-skills">
@@ -178,14 +178,14 @@
         </div>
 
     </div>
-    <div class="contact-section">
+    <div class="contact-section reveal" id="contact">
         <div class="contact-container">
             <p>Contact me:<br><strong>kaburacatherine07@gmail.com</strong></p>
             <div class="class-button">G-mail</div>
 
         </div>
     </div>
-    <div class="footer">
+    <div class="footer reveal">
         <div class="footer-container">
             <a href="https://github.com/Kaburaa" target="_blank" class="footer-element">
                <img src="./Images/github.gif" alt="github">
