@@ -1,0 +1,329 @@
+/* =============================================================================
+   BIO SECTION 
+   =============================================================================
+*/
+
+.bio-section{
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    padding-left: 3rem;
+} 
+.bio-header{
+    text-align: center;
+    color: var(--white-color);
+    margin-right: 2rem;
+}
+.bio-header h3 {
+    font-size: 2.5rem;
+}
+.bio-container-1, .bio-container-2{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 0;
+}
+.bio-container-1{
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    
+
+/* ?justify-content: center; */
+}
+.bio-info{
+    color: var(--white-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.bio-info h4 {
+    font-size: 3rem;
+    color: var(--white-color);
+    text-align: center;
+    /* margin-left: 11.5rem; */
+}
+.bio-info p {
+    font-size: 1.3rem;
+}
+.bio-image {
+    width: 270px;
+    height: 40vh;
+    padding-left: 4rem;
+    margin-bottom: 2rem; 
+    margin-right: 2rem;
+    
+}
+.bio-image img {
+    width: 100%;
+    border-radius: 50%;    
+}
+.bio-container-2{
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
+
+    
+}
+
+.my-interests{
+    color: var(--white-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+
+}
+
+.my-interests h4{
+    font-size: 2rem;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.my-interests p{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-align: center;
+
+}
+.my-interests span{
+    color: #040608;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------SMALLER SCREENS STYLES ----------------------- */
+@media all and (min-width: 920px) and (max-width: 1040px) { 
+    .bio-header h3{
+        font-size: 2rem;
+        
+        margin-left :2rem;
+    }
+    .bio-info p{
+        font-size: 1.2rem;
+    }
+    .bio-image{
+        margin-right: 1rem;
+    } 
+    .bio-image img {
+        width: 80%;
+    }
+    .my-interests {
+        padding-right: 2rem;
+    }
+    .my-interests h4{
+        font-size: 2rem;
+
+    }
+    .my-interests p{
+        font-size: 1.2rem;
+    }
+    .bio-container-2{
+        margin-top: 2rem;
+    }
+
+}
+@media all and (min-width: 590px) and (max-width: 920px) { 
+    .bio-header{
+        margin-right: 2rem;
+    }
+    .bio-header h3 {
+        font-size: 2rem;
+    }
+    .bio-image{
+        margin-right: 5rem;
+    }
+    .bio-image img {
+        width: 80%;
+    }
+    .bio-info{
+        margin-right: 4rem; 
+    }
+    .bio-info p{
+        font-size: 1.2rem; 
+    }
+    .bio-container-2 {
+        margin-top: 1.5rem;
+    }
+    .my-interests{
+        margin-right: 3.5rem;
+    }
+    .my-interests p{
+        font-size: 1.2rem;
+        
+    }
+    .my-interests h4{
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-right: 2rem;
+    }
+
+}
+@media all and (min-width: 400px) and (max-width: 590px) {
+    .bio-section {
+        margin-right: 1rem;
+    } 
+    .bio-header{
+        margin-right: 4rem;
+        padding-top: 1rem;
+    }
+    .bio-header h3 {
+        font-size: 2rem;
+    }
+    .bio-container-1, .bio-container-2 {
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding: 0;
+    }
+    .bio-image{
+        margin-right: 4rem;
+    }
+    .bio-image img {
+        width: 70%;
+    }
+    .bio-info{
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+    }
+    .bio-info p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+
+    }
+    .my-interests{
+        margin-right: 4rem;
+        margin-top: 1rem;
+     
+    }
+    .my-interests p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .my-interests h4{
+        font-size: 1.7rem;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+    }
+}
+@media all and (min-width: 360px) and (max-width: 400px) { 
+    .bio-section{
+        padding: 3rem;
+        padding-left: 1rem;
+    }
+    .bio-header{
+        font-size: 2rem;
+
+    }
+    .bio-image{
+        margin-right: 10rem;
+
+    }
+    .bio-container-1{
+        margin-right: 3rem;
+        margin-bottom: 7rem;
+        padding-right: 2rem;
+
+    }
+    .bio-info{
+        margin-right: 5rem;
+    }
+    .bio-info p{
+        font-size: 1rem;
+    }
+    .my-interests{
+        margin-right: 5rem;
+    }
+    .my-interests h4{
+        font-size: 2rem;
+
+    }
+    .my-interests p{
+        font-size: 1rem;
+
+    }
+    }
+    @media all and (max-width: 300px) {
+        .bio-section {
+            padding-left: 1rem;
+        }
+        .bio-header {
+            margin-left: 1rem;
+        }
+        .bio-header h3{
+            font-size: 1.5rem;
+        }
+        .bio-container-1, .bio-container-2{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .bio-image{
+            width: 150px;
+            height: 30vh;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        .bio-image img {
+            width: 80%;
+        }
+        .bio-info p{
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+        .bio-container-2 {
+            margin-top: 1rem;
+        }
+        .my-interests {
+            margin-top: 4rem;
+            padding-left: 1rem;
+        }
+        .my-interests h4 {
+            font-size: 1.3rem;
+        }
+        .my-interests p {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+    }
+
+/* @media all and (min-width: 400px) and (max-width: 920px) { 
+    .bio-container-1{
+        height: 100%;
+        width: 300px;
+        margin: 0 auto 0 2rem;
+    }
+    .bio-container-2{
+        height: 100%;
+        width: 300px;
+        margin: 0 auto 0 2rem; 
+    }
+    .bio-header {
+        font-size: 2rem;
+    }
+    .bio-image {
+        padding: 2rem;
+        margin: 0rem;
+    }
+ 
+    .bio-info p {
+        font-size: 1rem;
+    }
+    .my-interests h4{
+        font-size: 2rem;
+    }
+    
+    .my-interests p{
+        font-size: 1rem;
+    } */

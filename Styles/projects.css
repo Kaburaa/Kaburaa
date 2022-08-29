@@ -1,0 +1,71 @@
+/* =============================================================================
+   PROJECTS HEADING 
+   =============================================================================
+*/
+.projectsH {
+    color: var(--white-color); 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* ==============================================================================
+   PROJECTS SECTION 
+   ==============================================================================
+*/
+.projects-section h4{
+    font-size: 3rem;
+    color: var(--white-color);
+    text-align: center;
+}
+.projects-container-2{
+    width: 90%;
+    /* height: 100vh; */
+    margin: 1rem;
+    padding: 1rem;
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4rem;
+}
+.projects{
+    width: fit-content;
+    height: 100%;
+    background-color: #2A3B47;
+    color: var(--white-color);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.projects h5{
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.projects img{
+    width: 80%;
+    margin: 0 auto;   
+}
+.projects p{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*  SMALLER SCREENS STYLES */
+
+@media all and (max-width: 480px) { 
+    .projects-container-2 {
+        padding-left: 1rem;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 420px) { 
+    .projects-container-2 {
+        padding-left: 2rem;
+    }
+}
+
+.backPointer {
+    color: var(--white-color); 
+    font-size: 2.5rem;
+    padding: 1rem;
+}
